@@ -28,5 +28,36 @@ namespace OOP
         public string NokGender;
         public string NokRelationshipType;
 
+        //Customer Methods
+        public static void CreateCustomer()
+        {
+
+        }
+        public static void UpdateCustomer()
+        {
+
+        }
+        public static void DeleteCustomer()
+        {
+
+        }
+        public static void ListOfCustomers()
+        {
+
+        }
+        public static void FindCustomer()
+        {
+
+        }
+        public static void FindCustomerById()
+        {
+
+        }
+        public static void FindCustomerByCode()
+        {
+
+        }
+
+
     }
 }

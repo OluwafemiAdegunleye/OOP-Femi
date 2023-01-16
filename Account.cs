@@ -15,12 +15,42 @@ namespace OOP
         public string routingNumber;
         public string BankName;
         public string BankCode;
-        public string CustomerCode;
         public DateTime DateCreated;
         public string CreatedBy;
         public DateTime DateModified;
         public string ModifiedBy;
         public bool AccountStatus;
+
+        //Customer Methods
+        public static void CreateAccount()
+        {
+
+        }
+        public static void UpdateAccount()
+        {
+
+        }
+        public static void DeleteAccount()
+        {
+
+        }
+        public static void ListOfAccounts()
+        {
+
+        }
+        public static void FindAccount()
+        {
+
+        }
+        public static void FindAccountByNumber()
+        {
+
+        }
+        public static void FindAccountById()
+        {
+
+        }
+
 
     }
 }
