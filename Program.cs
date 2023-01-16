@@ -11,6 +11,7 @@ do
     Console.WriteLine("Welcome To MeriteFi Core Banking Platform");
     Console.WriteLine("******************************************");
     Console.WriteLine();
+    Console.Beep();
     Console.WriteLine("Please Select an Option:");
     Console.WriteLine();
 
@@ -23,6 +24,12 @@ do
 
     if (option == 1)
     {
+
+        Console.Beep();
+        Console.WriteLine();
+        Console.WriteLine("Please Select an Option:");
+        Console.WriteLine();
+
         Console.WriteLine("1.  Create Customers");
         Console.WriteLine("2.  Update Customers");
         Console.WriteLine("3.  Delete Customers");
@@ -30,10 +37,17 @@ do
         Console.WriteLine("5.  Find Customer");
         Console.WriteLine("6.  Find Customer by ID");
         Console.WriteLine("7.  Find Customer By Code");
+        Console.WriteLine("8.  Go Back To Previous Menu");
 
     }
     else if (option == 2)
     {
+
+        Console.Beep();
+        Console.WriteLine();
+        Console.WriteLine("Please Select an Option:");
+        Console.WriteLine();
+
         Console.WriteLine("1.  Create Accounts");
         Console.WriteLine("2.  Update Accounts");
         Console.WriteLine("3.  Delete Accounts");
@@ -41,6 +55,7 @@ do
         Console.WriteLine("5.  Find Account");
         Console.WriteLine("6.  Find Account by Number");
         Console.WriteLine("7.  Find Account By Code");
+        Console.WriteLine("8.  Go Back To Previous Menu");
 
     }
     else
@@ -49,7 +64,7 @@ do
     }
 
 
-
+    Console.Beep();
     Console.Write("Do you want to continue: ");
     ans = Console.ReadLine();
 }
