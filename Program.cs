@@ -1,5 +1,5 @@
 ﻿
-
+int subOption;
 int option;
 string ans = string.Empty;
 
@@ -17,59 +17,61 @@ do
 
     Console.WriteLine("1. Manage Customers");
     Console.WriteLine("2. Manage Accounts");
-    Console.WriteLine("3. Exit Application")
+    Console.WriteLine("3. Exit Application");
     Console.WriteLine();
 
     Console.Write("Option: ");
     option = Convert.ToInt32(Console.ReadLine());
 
-    do {
+    do
+    {
 
+        if (option == 1)
+        {
+
+            Console.Beep();
+            Console.WriteLine();
+            Console.WriteLine("Please select a Customer Management Option:");
+            Console.WriteLine();
+
+            Console.Write("Option: ");
+            subOption = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("1.  Create Customers");
+            Console.WriteLine("2.  Update Customers");
+            Console.WriteLine("3.  Delete Customers");
+            Console.WriteLine("4.  List Of Customers");
+            Console.WriteLine("5.  Find Customer");
+            Console.WriteLine("6.  Find Customer by ID");
+            Console.WriteLine("7.  Find Customer By Code");
+            Console.WriteLine("8.  Go Back To Previous Menu");
+
+        }
+        else if (option == 2)
+        {
+
+            Console.Beep();
+            Console.WriteLine();
+            Console.WriteLine("Please Select an Option:");
+            Console.WriteLine();
+
+            Console.WriteLine("1.  Create Accounts");
+            Console.WriteLine("2.  Update Accounts");
+            Console.WriteLine("3.  Delete Accounts");
+            Console.WriteLine("4.  List Of Accounts");
+            Console.WriteLine("5.  Find Account");
+            Console.WriteLine("6.  Find Account by Number");
+            Console.WriteLine("7.  Find Account By Code");
+            Console.WriteLine("8.  Go Back To Previous Menu");
+
+        }
+        else
+        {
+            ans = "yes";
+        }
 
     }
     while ();
-
-
-    if (option == 1)
-    {
-
-        Console.Beep();
-        Console.WriteLine();
-        Console.WriteLine("Please Select an Option:");
-        Console.WriteLine();
-
-        Console.WriteLine("1.  Create Customers");
-        Console.WriteLine("2.  Update Customers");
-        Console.WriteLine("3.  Delete Customers");
-        Console.WriteLine("4.  List Of Customers");
-        Console.WriteLine("5.  Find Customer");
-        Console.WriteLine("6.  Find Customer by ID");
-        Console.WriteLine("7.  Find Customer By Code");
-        Console.WriteLine("8.  Go Back To Previous Menu");
-
-    }
-    else if (option == 2)
-    {
-
-        Console.Beep();
-        Console.WriteLine();
-        Console.WriteLine("Please Select an Option:");
-        Console.WriteLine();
-
-        Console.WriteLine("1.  Create Accounts");
-        Console.WriteLine("2.  Update Accounts");
-        Console.WriteLine("3.  Delete Accounts");
-        Console.WriteLine("4.  List Of Accounts");
-        Console.WriteLine("5.  Find Account");
-        Console.WriteLine("6.  Find Account by Number");
-        Console.WriteLine("7.  Find Account By Code");
-        Console.WriteLine("8.  Go Back To Previous Menu");
-
-    }
-    else
-    {
-        ans = "yes";
-    }
 
 
     Console.Beep();
