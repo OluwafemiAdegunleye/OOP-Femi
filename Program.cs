@@ -7,9 +7,9 @@ do
 {
 
     Console.Clear();
-    Console.WriteLine("************************");
-    Console.WriteLine("Welcome To MeriteFi Core");
-    Console.WriteLine("************************");
+    Console.WriteLine("******************************************");
+    Console.WriteLine("Welcome To MeriteFi Core Banking Platform");
+    Console.WriteLine("******************************************");
     Console.WriteLine();
     Console.WriteLine("Please Select an Option:");
     Console.WriteLine();
