@@ -34,9 +34,6 @@ do
             Console.WriteLine("Please select a Customer Management Option:");
             Console.WriteLine();
 
-            Console.Write("Option: ");
-            subOption = Convert.ToInt32(Console.ReadLine());
-
             Console.WriteLine("1.  Create Customers");
             Console.WriteLine("2.  Update Customers");
             Console.WriteLine("3.  Delete Customers");
@@ -45,6 +42,10 @@ do
             Console.WriteLine("6.  Find Customer by ID");
             Console.WriteLine("7.  Find Customer By Code");
             Console.WriteLine("8.  Go Back To Previous Menu");
+
+            Console.WriteLine();
+            Console.Write("Option: ");
+            subOption = Convert.ToInt32(Console.ReadLine());
 
         }
         else if (option == 2)
