@@ -17,10 +17,18 @@ do
 
     Console.WriteLine("1. Manage Customers");
     Console.WriteLine("2. Manage Accounts");
+    Console.WriteLine("3. Exit Application")
     Console.WriteLine();
 
     Console.Write("Option: ");
     option = Convert.ToInt32(Console.ReadLine());
+
+    do {
+
+
+    }
+    while ();
+
 
     if (option == 1)
     {
