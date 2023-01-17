@@ -1,4 +1,6 @@
 ﻿
+using OOP;
+
 int subOption;
 int option;
 string ans = string.Empty;
@@ -47,6 +49,42 @@ do
             Console.Write("Option: ");
             subOption = Convert.ToInt32(Console.ReadLine());
 
+            switch (subOption)
+            {
+                case 1:
+                    Customer customer = new Customer();
+                    break;
+
+                case 2:
+
+                    break;
+
+                case 3:
+
+                    break;
+
+                case 4:
+
+                    break;
+
+                case 5:
+
+                    break;
+
+                case 6:
+
+                    break;
+
+                case 7:
+
+                    break;
+                case 8:
+
+                    break;
+
+            }
+
+
         }
         else if (option == 2)
         {
@@ -64,6 +102,46 @@ do
             Console.WriteLine("6.  Find Account by Number");
             Console.WriteLine("7.  Find Account By Code");
             Console.WriteLine("8.  Go Back To Previous Menu");
+
+            Console.WriteLine();
+            Console.Write("Option: ");
+            subOption = Convert.ToInt32(Console.ReadLine());
+
+            switch (subOption)
+            {
+                case 1:
+                    Account account = new Account();
+                    break;
+
+                case 2:
+
+                    break;
+
+                case 3:
+
+                    break;
+
+                case 4:
+
+                    break;
+
+                case 5:
+
+                    break;
+
+                case 6:
+
+                    break;
+
+                case 7:
+
+                    break;
+                case 8:
+
+                    break;
+
+            }
+
 
         }
         else
@@ -83,36 +161,5 @@ while (ans.ToLower() == "yes" || ans.ToLower() == "y");
 
 
 
-switch (option)
-{
-    case 1:
-
-        break;
-
-    case 2:
-
-        break;
-
-    case 3:
-
-        break;
-
-    case 4:
-
-        break;
-
-    case 5:
-
-        break;
-
-    case 6:
-
-        break;
-
-    case 7:
-
-        break;
-
-}
 
 
