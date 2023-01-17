@@ -4,6 +4,7 @@ using OOP;
 int subOption;
 int option;
 string ans = string.Empty;
+Customer[] customers = new Customer[100];
 
 do
 {
@@ -51,37 +52,102 @@ do
             switch (subOption)
             {
                 case 1:
-                    //Customer customer = new Customer();
+
+                    Customer customer = new Customer();
                     Console.WriteLine("1.  Create Customers");
                     Console.ReadLine();
+
+                    Console.Write("First Name: ");
+                    customer.FirstName = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Last Name: ");
+                    customer.LastName = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Middle Name: ");
+                    customer.MiddleName = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Address: ");
+                    customer.Address = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("State of Origin: ");
+                    customer.StateOfOrigin = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Date of Birth: ");
+                    customer.Dob = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Phone Number: ");
+                    customer.PhoneNumber = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("E-mail Address: ");
+                    customer.Email = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Next of kin Name: ");
+                    customer.NokName = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Next of kin Address: ");
+                    customer.NokAddress = Console.ReadLine();
+                    Console.WriteLine();
+                    Console.Write("Next of Kin Phone Number: ");
+                    customer.NokPhone = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Next of Kin E-mail Address: ");
+                    customer.NokEmail = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Next of KinRelationship: ");
+                    customer.NokRelationshipType = Console.ReadLine();
+                    Console.WriteLine();
+
                     break;
 
                 case 2:
 
-                    Console.WriteLine("2.  Create Customers");
+                    Console.WriteLine("2.  Update Customers");
                     Console.ReadLine();
                     break;
 
                 case 3:
 
-                    Console.WriteLine("3.  Create Customers");
+                    Console.WriteLine("3.  Delete Customers");
                     Console.ReadLine();
 
                     break;
 
                 case 4:
 
+                    Console.WriteLine("4.  List Of Customers");
+                    Console.ReadLine();
+
                     break;
 
                 case 5:
+
+                    Console.WriteLine("5.  Find Customer");
+                    Console.ReadLine();
 
                     break;
 
                 case 6:
 
+                    Console.WriteLine("6.  Find Customer by ID");
+                    Console.ReadLine();
+
                     break;
 
                 case 7:
+
+                    Console.WriteLine("7.  Find Customer By Code");
+                    Console.ReadLine();
 
                     break;
                 case 8:
