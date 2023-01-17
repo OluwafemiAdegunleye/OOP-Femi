@@ -25,10 +25,9 @@ do
     Console.Write("Option: ");
     option = Convert.ToInt32(Console.ReadLine());
 
-    do
+    if (option == 1)
     {
-
-        if (option == 1)
+        do
         {
 
             Console.Beep();
@@ -52,14 +51,21 @@ do
             switch (subOption)
             {
                 case 1:
-                    Customer customer = new Customer();
+                    //Customer customer = new Customer();
+                    Console.WriteLine("1.  Create Customers");
+                    Console.ReadLine();
                     break;
 
                 case 2:
 
+                    Console.WriteLine("2.  Create Customers");
+                    Console.ReadLine();
                     break;
 
                 case 3:
+
+                    Console.WriteLine("3.  Create Customers");
+                    Console.ReadLine();
 
                     break;
 
@@ -79,78 +85,79 @@ do
 
                     break;
                 case 8:
+                    subOption = 8;
 
                     break;
 
             }
 
-
         }
-        else if (option == 2)
-        {
+        while (subOption != 8);
 
-            Console.Beep();
-            Console.WriteLine();
-            Console.WriteLine("Please Select an Option:");
-            Console.WriteLine();
-
-            Console.WriteLine("1.  Create Accounts");
-            Console.WriteLine("2.  Update Accounts");
-            Console.WriteLine("3.  Delete Accounts");
-            Console.WriteLine("4.  List Of Accounts");
-            Console.WriteLine("5.  Find Account");
-            Console.WriteLine("6.  Find Account by Number");
-            Console.WriteLine("7.  Find Account By Code");
-            Console.WriteLine("8.  Go Back To Previous Menu");
-
-            Console.WriteLine();
-            Console.Write("Option: ");
-            subOption = Convert.ToInt32(Console.ReadLine());
-
-            switch (subOption)
-            {
-                case 1:
-                    Account account = new Account();
-                    break;
-
-                case 2:
-
-                    break;
-
-                case 3:
-
-                    break;
-
-                case 4:
-
-                    break;
-
-                case 5:
-
-                    break;
-
-                case 6:
-
-                    break;
-
-                case 7:
-
-                    break;
-                case 8:
-
-                    break;
-
-            }
-
-
-        }
-        else
-        {
-            ans = "yes";
-        }
 
     }
-    while ();
+    else if (option == 2)
+    {
+
+        Console.Beep();
+        Console.WriteLine();
+        Console.WriteLine("Please Select an Option:");
+        Console.WriteLine();
+
+        Console.WriteLine("1.  Create Accounts");
+        Console.WriteLine("2.  Update Accounts");
+        Console.WriteLine("3.  Delete Accounts");
+        Console.WriteLine("4.  List Of Accounts");
+        Console.WriteLine("5.  Find Account");
+        Console.WriteLine("6.  Find Account by Number");
+        Console.WriteLine("7.  Find Account By Code");
+        Console.WriteLine("8.  Go Back To Previous Menu");
+
+        Console.WriteLine();
+        Console.Write("Option: ");
+        subOption = Convert.ToInt32(Console.ReadLine());
+
+        switch (subOption)
+        {
+            case 1:
+                Account account = new Account();
+                break;
+
+            case 2:
+
+                break;
+
+            case 3:
+
+                break;
+
+            case 4:
+
+                break;
+
+            case 5:
+
+                break;
+
+            case 6:
+
+                break;
+
+            case 7:
+
+                break;
+            case 8:
+
+                break;
+
+        }
+
+
+    }
+    else
+    {
+        ans = "yes";
+    }
 
 
     Console.Beep();
