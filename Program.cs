@@ -55,7 +55,9 @@ do
 
                     Customer customer = new Customer();
                     Console.WriteLine("1.  Create Customers");
-                    Console.ReadLine();
+                    Console.WriteLine();
+                    Console.WriteLine("Input Custormer Details");
+                    Console.WriteLine();
 
                     Console.Write("First Name: ");
                     customer.FirstName = Console.ReadLine();
@@ -69,8 +71,32 @@ do
                     customer.MiddleName = Console.ReadLine();
                     Console.WriteLine();
 
+                    Console.Write("Gender: Male(M) or Female(F)");
+                    string gender = Console.ReadLine();
+                    if (gender.ToLower() == "male" || gender.ToLower() == "m")
+                    {
+                        customer.Gender = "Male";
+                    }
+                    else if (gender.ToLower() == "female" || gender.ToLower() == "f")
+                    {
+                        customer.Gender = "Female";
+                    }
+                    Console.WriteLine();
+
+                    Console.Write("National Identification Number(NIN): ");
+                    customer.Nin = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Bank Verification Number(BVN): ");
+                    customer.Bvn = Console.ReadLine();
+                    Console.WriteLine();
+
                     Console.Write("Address: ");
                     customer.Address = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Country: ");
+                    customer.Country = Console.ReadLine();
                     Console.WriteLine();
 
                     Console.Write("State of Origin: ");
@@ -87,6 +113,18 @@ do
 
                     Console.Write("E-mail Address: ");
                     customer.Email = Console.ReadLine();
+                    Console.WriteLine();
+
+                    Console.Write("Account Type: Current(C) or Savings(S)");
+                    string accountType = Console.ReadLine();
+                    if (accountType.ToLower() == "Current" || accountType.ToLower() == "c")
+                    {
+                        customer.CustomerType = "Current";
+                    }
+                    else if (accountType.ToLower() == "Savings" || accountType.ToLower() == "S")
+                    {
+                        customer.CustomerType = "Savings";
+                    }
                     Console.WriteLine();
 
                     Console.Write("Next of kin Name: ");
@@ -114,6 +152,7 @@ do
 
                     Console.WriteLine("2.  Update Customers");
                     Console.ReadLine();
+
                     break;
 
                 case 3:
