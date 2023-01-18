@@ -146,6 +146,18 @@ do
                     customer.NokRelationshipType = Console.ReadLine();
                     Console.WriteLine();
 
+                    for (int i = 0; i <= customers.Length; i++)
+                    {
+                        if (customers[i] == null)
+                        {
+                            customer.Code = Convert.ToString(i + 1).PadLeft(3, '0');
+
+                            customers[i] = customer;
+                        }
+                        
+                    }
+
+
                     break;
 
                 case 2:
