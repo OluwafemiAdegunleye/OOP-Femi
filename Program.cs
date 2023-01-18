@@ -54,7 +54,7 @@ do
                 case 1:
 
                     Customer customer = new Customer();
-                    Console.WriteLine("1.  Create Customers");
+                    Console.WriteLine("Create Customers");
                     Console.WriteLine();
                     Console.WriteLine("Input Custormer Details");
                     Console.WriteLine();
@@ -146,7 +146,7 @@ do
                     customer.NokRelationshipType = Console.ReadLine();
                     Console.WriteLine();
 
-                    for (int i = 0; i <= customers.Length; i++)
+                    for (int i = 0; i < customers.Length; i++)
                     {
                         if (customers[i] == null)
                         {
@@ -161,45 +161,48 @@ do
 
                 case 2:
 
-                    Console.WriteLine("2.  Update Customers");
+                    Console.WriteLine("Update Customers");
                     Console.ReadLine();
 
                     break;
 
                 case 3:
 
-                    Console.WriteLine("3.  Delete Customers");
+                    Console.WriteLine("Delete Customers");
                     Console.ReadLine();
 
                     break;
 
                 case 4:
 
-                    Console.WriteLine("4.  List Of Customers");
-                    for (int i = 0; i <= customers.Length; i++){
-                        Console.WriteLine(customers[i].FirstName + (" ") + customers[i].LastName);
+                    Console.WriteLine("List Of Customers");
+                    for (int i = 0; i < customers.Length; i++){
+                        if (customers[i] != null){
+                            Console.WriteLine((i + 1) + ". " + customers[i].FirstName + (" ") + customers[i].LastName);
+                        }
+                        
                     }
-                    Console.WriteLine();
+                    Console.ReadLine();
 
                     break;
 
                 case 5:
 
-                    Console.WriteLine("5.  Find Customer");
+                    Console.WriteLine("Find Customer");
                     Console.ReadLine();
 
                     break;
 
                 case 6:
 
-                    Console.WriteLine("6.  Find Customer by ID");
+                    Console.WriteLine("Find Customer by ID");
                     Console.ReadLine();
 
                     break;
 
                 case 7:
 
-                    Console.WriteLine("7.  Find Customer By Code");
+                    Console.WriteLine("Find Customer By Code");
                     Console.ReadLine();
 
                     break;
