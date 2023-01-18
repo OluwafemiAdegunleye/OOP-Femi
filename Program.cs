@@ -154,7 +154,7 @@ do
                             customers[i] = customer;
                             break;
                         }
-                        
+
                     }
 
                     break;
@@ -162,6 +162,104 @@ do
                 case 2:
 
                     Console.WriteLine("Update Customers");
+                    Console.Write("Enter Code: ");
+                    string code = Console.ReadLine();
+                    for (int i = 0; i < customers.Length; i++)
+                    {
+                        if (customers[i].Code == code)
+                        {
+
+                            Console.Write("First Name: ");
+                            customers[i].FirstName = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Last Name: ");
+                            customers[i].LastName = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Middle Name: ");
+                            customers[i].MiddleName = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Gender: Male(M) or Female(F)");
+                            string sex = Console.ReadLine();
+                            if (sex.ToLower() == "male" || sex.ToLower() == "m")
+                            {
+                                customers[i].Gender = "Male";
+                            }
+                            else if (sex.ToLower() == "female" || sex.ToLower() == "f")
+                            {
+                                customers[i].Gender = "Female";
+                            }
+                            Console.WriteLine();
+
+                            Console.Write("National Identification Number(NIN): ");
+                            customers[i].Nin = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Bank Verification Number(BVN): ");
+                            customers[i].Bvn = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Address: ");
+                            customers[i].Address = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Country: ");
+                            customers[i].Country = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("State of Origin: ");
+                            customers[i].StateOfOrigin = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Date of Birth: ");
+                            customers[i].Dob = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Phone Number: ");
+                            customers[i].PhoneNumber = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("E-mail Address: ");
+                            customers[i].Email = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Account Type: Current(C) or Savings(S)");
+                            string acctType = Console.ReadLine();
+                            if (acctType.ToLower() == "Current" || acctType.ToLower() == "c")
+                            {
+                                customers[i].CustomerType = "Current";
+                            }
+                            else if (acctType.ToLower() == "Savings" || acctType.ToLower() == "S")
+                            {
+                                customers[i].CustomerType = "Savings";
+                            }
+                            Console.WriteLine();
+
+                            Console.Write("Next of kin Name: ");
+                            customers[i].NokName = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Next of kin Address: ");
+                            customers[i].NokAddress = Console.ReadLine();
+                            Console.WriteLine();
+                            Console.Write("Next of Kin Phone Number: ");
+                            customers[i].NokPhone = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Next of Kin E-mail Address: ");
+                            customers[i].NokEmail = Console.ReadLine();
+                            Console.WriteLine();
+
+                            Console.Write("Next of KinRelationship: ");
+                            customers[i].NokRelationshipType = Console.ReadLine();
+                            Console.WriteLine();
+
+                            break;
+                        }
+                    }
+
                     Console.ReadLine();
 
                     break;
@@ -176,11 +274,13 @@ do
                 case 4:
 
                     Console.WriteLine("List Of Customers");
-                    for (int i = 0; i < customers.Length; i++){
-                        if (customers[i] != null){
+                    for (int i = 0; i < customers.Length; i++)
+                    {
+                        if (customers[i] != null)
+                        {
                             Console.WriteLine((i + 1) + ". " + customers[i].FirstName + (" ") + customers[i].LastName);
                         }
-                        
+
                     }
                     Console.ReadLine();
 
