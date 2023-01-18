@@ -151,12 +151,11 @@ do
                         if (customers[i] == null)
                         {
                             customer.Code = Convert.ToString(i + 1).PadLeft(3, '0');
-
                             customers[i] = customer;
+                            break;
                         }
                         
                     }
-
 
                     break;
 
@@ -177,7 +176,10 @@ do
                 case 4:
 
                     Console.WriteLine("4.  List Of Customers");
-                    Console.ReadLine();
+                    for (int i = 0; i <= customers.Length; i++){
+                        Console.WriteLine(customers[i].FirstName + (" ") + customers[i].LastName);
+                    }
+                    Console.WriteLine();
 
                     break;
 
