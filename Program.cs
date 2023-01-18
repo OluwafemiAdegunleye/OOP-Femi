@@ -267,6 +267,16 @@ do
                 case 3:
 
                     Console.WriteLine("Delete Customers");
+                    Console.Write("Enter Code: ");
+                    string codes = Console.ReadLine();
+                    for (int i = 0; i < customers.Length; i++)
+                    {
+                        if (customers[i].Code == codes)
+                        {
+                            customers[i] = null;
+                        }
+                    }
+
                     Console.ReadLine();
 
                     break;
@@ -289,8 +299,36 @@ do
                 case 5:
 
                     Console.WriteLine("Find Customer");
+                    Console.Write("Enter Code: ");
+                    string searchParamitter = Console.ReadLine();
+                    for (int i = 0; i < customers.Length; i++)
+                    {
+                        if (customers[i].Code.Substring(0, 3) == searchParamitter.Substring(0, 3) || customers[i].FirstName.Substring(0, 2) == searchParamitter.Substring(0, 2) || customers[i].LastName.Substring(0, 2) == searchParamitter.Substring(0, 2))
+                        {
+                            Console.WriteLine(customers[i].Code);
+                            Console.WriteLine(customers[i].FirstName);
+                            Console.WriteLine(customers[i].LastName);
+                            Console.WriteLine(customers[i].MiddleName);
+                            Console.WriteLine(customers[i].Nin);
+                            Console.WriteLine(customers[i].Bvn);
+                            Console.WriteLine(customers[i].Address);
+                            Console.WriteLine(customers[i].StateOfOrigin);
+                            Console.WriteLine(customers[i].Country);
+                            Console.WriteLine(customers[i].CustomerType);
+                            Console.WriteLine(customers[i].Dob);
+                            Console.WriteLine(customers[i].PhoneNumber);
+                            Console.WriteLine(customers[i].Email);
+                            Console.WriteLine(customers[i].Gender);
+                            Console.WriteLine(customers[i].NokName);
+                            Console.WriteLine(customers[i].NokAddress);
+                            Console.WriteLine(customers[i].NokPhone);
+                            Console.WriteLine(customers[i].NokEmail);
+                            Console.WriteLine(customers[i].NokGender);
+                            Console.WriteLine(customers[i].NokRelationshipType);
+                            break;
+                        }
+                    }
                     Console.ReadLine();
-
                     break;
 
                 case 6:
