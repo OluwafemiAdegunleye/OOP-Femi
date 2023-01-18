@@ -299,7 +299,7 @@ do
                 case 5:
 
                     Console.WriteLine("Find Customer");
-                    Console.Write("Enter Code: ");
+                    Console.Write("Enter Customer Details: ");
                     string searchParamitter = Console.ReadLine();
                     for (int i = 0; i < customers.Length; i++)
                     {
