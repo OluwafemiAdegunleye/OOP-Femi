@@ -341,8 +341,37 @@ do
                 case 7:
 
                     Console.WriteLine("Find Customer By Code");
-                    Console.ReadLine();
+                    Console.Write("Enter Code: ");
+                    string sCode = Console.ReadLine();
+                    for (int i = 0; i < customers.Length; i++)
+                    {
+                        if (customers[i].Code == sCode)
+                        {
+                            Console.WriteLine(customers[i].Code);
+                            Console.WriteLine(customers[i].FirstName);
+                            Console.WriteLine(customers[i].LastName);
+                            Console.WriteLine(customers[i].MiddleName);
+                            Console.WriteLine(customers[i].Nin);
+                            Console.WriteLine(customers[i].Bvn);
+                            Console.WriteLine(customers[i].Address);
+                            Console.WriteLine(customers[i].StateOfOrigin);
+                            Console.WriteLine(customers[i].Country);
+                            Console.WriteLine(customers[i].CustomerType);
+                            Console.WriteLine(customers[i].Dob);
+                            Console.WriteLine(customers[i].PhoneNumber);
+                            Console.WriteLine(customers[i].Email);
+                            Console.WriteLine(customers[i].Gender);
+                            Console.WriteLine(customers[i].NokName);
+                            Console.WriteLine(customers[i].NokAddress);
+                            Console.WriteLine(customers[i].NokPhone);
+                            Console.WriteLine(customers[i].NokEmail);
+                            Console.WriteLine(customers[i].NokGender);
+                            Console.WriteLine(customers[i].NokRelationshipType);
+                            break;
+                        }
+                    }
 
+                    Console.ReadLine();
                     break;
                 case 8:
                     subOption = 8;
