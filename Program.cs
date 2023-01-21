@@ -54,6 +54,7 @@ do
                 case 1:
 
                     Customer customer = new Customer();
+                    customer.CreateCustomer
                     Console.WriteLine("Create Customers");
                     Console.WriteLine();
                     Console.WriteLine("Input Custormer Details");

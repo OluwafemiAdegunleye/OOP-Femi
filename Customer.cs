@@ -29,19 +29,19 @@ namespace OOP
         public string NokRelationshipType;
 
         //Customer Methods
-        public static void CreateCustomer()
+        public Customer CreateCustomer()
         {
-
+            return null;
         }
-        public static void UpdateCustomer()
+        public Customer UpdateCustomer()
         {
-
+            return null;
         }
-        public static void DeleteCustomer()
+        public Customer DeleteCustomer()
         {
-
+            return null;
         }
-        public static void ListOfCustomers()
+        public void ListOfCustomers()
         {
 
         }
