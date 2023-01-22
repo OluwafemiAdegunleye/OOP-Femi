@@ -1,4 +1,4 @@
-﻿
+﻿/*
 using OOP;
 
 int subOption;
@@ -287,6 +287,12 @@ do
 
                     break;
 
+                default: 
+                    Console.WriteLine("That is not an option! Press any key to continue");
+                    Console.ReadLine();
+                    subOption = 8;
+                    break;
+
             }
 
         }
@@ -354,6 +360,8 @@ do
     }
     else
     {
+        Console.WriteLine("That is not an option! Press any key to continue");
+        Console.ReadLine();
         ans = "yes";
     }
 
@@ -361,8 +369,60 @@ do
     Console.Beep();
     Console.Write("Do you want to continue: ");
     ans = Console.ReadLine();
+
+    if (ans.ToLower() == "no" || ans.ToLower() == "n") {
+        Console.WriteLine("Thank you for using our application. Press enter to exit. ");
+        Console.ReadLine();
+    }
 }
 while (ans.ToLower() == "yes" || ans.ToLower() == "y");
+
+*/
+
+
+using OOP;
+int option;
+string ans;
+
+
+
+do
+{
+
+  Console.WriteLine("***********************");
+  Console.WriteLine("Merite Banking Platform");
+  Console.WriteLine("***********************\n\n");
+
+
+  Console.WriteLine("Please select an option: \n ");
+  Console.WriteLine("1. Manage Customers");
+  Console.WriteLine("2. Manage Accounts");
+  option = Convert.ToInt32(Console.ReadLine());
+  if (option == 1)
+  {
+    Console.WriteLine();
+
+    }
+
+  else if (option == 2)
+  {
+
+
+  }
+
+  else
+  {
+
+  }
+
+
+
+
+
+}
+
+while ((ans.ToLower() == "yes") || (ans.ToLower() == "y"));
+
 
 
 

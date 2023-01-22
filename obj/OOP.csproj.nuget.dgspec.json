@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\OOP\\OOP.csproj": {}
+    "/Users/oluwafemiadegunleye/Projects/OOP-Femi/OOP.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\OOP\\OOP.csproj": {
+    "/Users/oluwafemiadegunleye/Projects/OOP-Femi/OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\OOP\\OOP.csproj",
+        "projectUniqueName": "/Users/oluwafemiadegunleye/Projects/OOP-Femi/OOP.csproj",
         "projectName": "OOP",
-        "projectPath": "C:\\Projects\\OOP\\OOP.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\OOP\\obj\\",
+        "projectPath": "/Users/oluwafemiadegunleye/Projects/OOP-Femi/OOP.csproj",
+        "packagesPath": "/Users/oluwafemiadegunleye/.nuget/packages/",
+        "outputPath": "/Users/oluwafemiadegunleye/Projects/OOP-Femi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/oluwafemiadegunleye/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
